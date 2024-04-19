@@ -1,0 +1,85 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>BusChronicles</title>
+    <link rel="stylesheet" type="text/css" href="~/Content/CSS/PagPrin.css">
+</head>
+<body>
+    <header>
+        <h1>Bienvenido!</h1>
+    </header>
+
+
+    <section id="inicio">
+        <h2>Bienvenido BusChronicles</h2>
+        <p>Mejora tu experiencia en el transporte público gestionando tu tiempo de manera eficiente.</p>
+
+        <a href="#rutas" class="btn">Ver Rutas</a>
+    </section>
+
+    <section id="rutas">
+        <h2>Rutas Disponibles</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Ruta</th>
+                    <th>Destino</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Facatativá - Bogotá</td>
+                    <td>Bogotá - Facatativá</td>
+                </tr>
+                <tr>
+                    <td>Facatativá - Madrid</td>
+                    <td>Madrid - Facatativá</td>
+                </tr>
+                <tr>
+                    <td>Facatativá - Funza</td>
+                    <td>Funza - Facatativá</td>
+                </tr>
+            </tbody>
+        </table>
+
+    </section>
+
+    <section id="cronometrar">
+        <h2>Cronometrar Tiempo de Llegada</h2>
+        <form id="formulario-tiempo-llegada">
+            <label for="ruta">Ruta:</label>
+            <select id="ruta" name="ruta" required>
+            </select>
+
+            <label for="bus">Bus:</label>
+            <select id="bus" name="bus" required>
+            </select>
+
+            <button type="submit">Iniciar Cronómetro</button>
+        </form>
+
+    </section>
+
+    <section id="about">
+        <h2>Acerca de la Plataforma</h2>
+        <p>
+            La Plataforma de Tiempo de Llegada de Buses es una herramienta diseñada para mejorar la experiencia
+            de los usuarios en el transporte público de Bogotá, Funza, Madrid, Mosquera y Facatativá.
+            Permite a los usuarios gestionar su tiempo de manera más eficiente al proporcionar información en tiempo
+            real sobre el tiempo de llegada de los buses de varias compañías de transporte.
+        </p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 BUSCHRONICLES</p>
+    </footer>
+
+    <script src="~/Scripts/Javascript/JavaPrin.js"></script>
+</body>
+</html>
+ 
